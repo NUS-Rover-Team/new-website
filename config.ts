@@ -1,18 +1,18 @@
 const siteMetadata = {
-    title: `Elemental`,
+    title: `NUS Rover Team`,
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
-    logo: `/images/logo.png`,
-    icon: `/images/icon.png`,
-    titleImage: `/images/wall.png`,
-    ogImage: `/images/wall.png`,
+    logo: `/images/logo.jpeg`,
+    icon: `/images/icon.jpeg`,
+    titleImage: `/images/wall.jpg`,
+    ogImage: `/images/wall.jpg`,
     twoColumnWall: true,
-    cookiePolicy: true,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
+    cookiePolicy: false,
+    introTag: `A FLAGSHIP PROJECT UNDER NUS SEDS`,
+    description: `✨ per aspera ad astra ✨`,
     about:
-        "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
-    author: `@_akzhy`,
+        "We are a multidisciplinary team from FoE, FoS and SoC intending to participate in the prestigious University Rover Challenge 2021 held annually at the Mars Desert Research Station (MDRS) in Utah, USA. In AY19/20, our team was the only team to get selected for the second round of competition from South East Asia. This year, we are aiming for the big prize - reaching the finals held in MDRS!",
+    author: `@nusroverteam`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true,
@@ -27,11 +27,11 @@ const siteMetadata = {
             url: "/about",
         },
         {
-            name: "BLOG",
+            name: "NEWS",
             url: "/blog",
         },
         {
-            name: "PORTFOLIO",
+            name: "SUB-TEAMS",
             url: "/portfolio",
         },
         {
@@ -46,40 +46,40 @@ const siteMetadata = {
         },
         {
             name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental",
+            url: "https://github.com/NUS-Rover-Team/new-website",
         },
     ],
     social: [
         {
             name: "Facebook",
             icon: "/images/Facebook.svg",
-            url: "#",
+            url: "https://www.facebook.com/nusseds/",
         },
         {
-            name: "Twitter",
-            icon: "/images/Twitter.svg",
-            url: "#",
+            name: "Github",
+            icon: "/images/Github.png",
+            url: "https://github.com/NUS-Rover-Team",
         },
         {
             name: "Instagram",
             icon: "/images/Instagram.svg",
-            url: "#",
+            url: "https://www.instagram.com/nusroverteam/?hl=en",
         },
         {
             name: "Youtube",
             icon: "/images/Youtube.svg",
-            url: "#",
+            url: "https://www.youtube.com/channel/UCUbobZWvBIYmCOsc_33vwGQ",
         },
     ],
     contact: {
         // leave empty ('') or false to hide form
-        api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
+        api_url: "https://getform.io/f/6276494c-50e5-45ca-ae2c-c13c2a5ddf6c",
+        description: `Do contact us via our socials or drop us a question in the form so we can get back to you!`,
+        mail: "roverteam.nus@gmail.com",
         phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation",
+        address: "EW1A, 1 Engineering Drive 2, Singapore 117576",
     },
-    disqus: "elemental-netlify-com",
+    disqus: ""
 }
 
 const beforeContactFormSubmit = data => {
@@ -93,21 +93,21 @@ const beforeContactFormSubmit = data => {
     if (data.name.trim().length < 2) {
         errors.push({
             code: 1,
-            message: "Enter a name",
+            message: "Please enter a valid name!",
         })
     }
 
     if (!data.email.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
         errors.push({
             code: 2,
-            message: "Enter a valid email address",
+            message: "Please enter a valid email address!",
         })
     }
 
     if (data.message.trim().length < 15) {
         errors.push({
             code: 3,
-            message: "Enter a message with atleast 15 characters",
+            message: "Please enter a message with atleast 15 characters!",
         })
     }
 
