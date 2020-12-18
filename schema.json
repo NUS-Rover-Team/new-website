@@ -16531,16 +16531,6 @@
               "defaultValue": null
             },
             {
-              "name": "shortname",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
               "name": "pathCheck",
               "description": "",
               "type": {
@@ -17551,18 +17541,6 @@
                   "name": "String",
                   "ofType": null
                 }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "shortname",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -18989,12 +18967,6 @@
             },
             {
               "name": "pluginCreator___pluginOptions___mediaTypes",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginCreator___pluginOptions___shortname",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -24346,12 +24318,6 @@
             },
             {
               "name": "pluginOptions___mediaTypes",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginOptions___shortname",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
