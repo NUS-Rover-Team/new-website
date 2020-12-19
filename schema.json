@@ -16665,6 +16665,16 @@
               "defaultValue": null
             },
             {
+              "name": "author",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "StringQueryOperatorInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "license",
               "description": "",
               "type": {
@@ -17664,6 +17674,18 @@
             },
             {
               "name": "main",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "author",
               "description": null,
               "args": [],
               "type": {
@@ -19021,6 +19043,12 @@
             },
             {
               "name": "pluginCreator___packageJson___main",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginCreator___packageJson___author",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -24372,6 +24400,12 @@
             },
             {
               "name": "packageJson___main",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "packageJson___author",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
