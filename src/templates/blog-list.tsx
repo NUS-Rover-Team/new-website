@@ -13,7 +13,7 @@ export default function blogList({ data, pageContext, location }: PageProps<Blog
     return (
         <Layout
             seo={{
-                title: "Blog",
+                title: "News",
             }}
             location={location}
         >

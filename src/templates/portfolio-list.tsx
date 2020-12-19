@@ -19,7 +19,7 @@ export default function portfolioList({ data, pageContext, location }: PageProps
     return (
         <Layout
             seo={{
-                title: "Portfolio",
+                title: "Sub-Teams",
             }}
             location={location}
         >
