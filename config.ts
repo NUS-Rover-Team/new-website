@@ -27,11 +27,11 @@ const siteMetadata = {
             url: "/about",
         },
         {
-            name: "NEWS",
+            name: "SUB-TEAMS",
             url: "/blog",
         },
         {
-            name: "SUB-TEAMS",
+            name: "NEWS",
             url: "/portfolio",
         },
         {

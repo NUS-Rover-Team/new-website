@@ -11,6 +11,8 @@ import { Row, Col } from "../components/shortcodes/index"
 import Comments from "../components/comments"
 import { BlogQuery } from "./__generated__/BlogQuery"
 
+//                  date(formatString: "DD MMMM YYYY") Removed from end
+
 export default function blog({ location, data }: PageProps<BlogQuery, {}>) {
     return (
         <Layout
@@ -33,12 +35,12 @@ export default function blog({ location, data }: PageProps<BlogQuery, {}>) {
                             <h1 className="text-5xl font-bold text-primary">
                                 {data.mdx.frontmatter.title}
                             </h1>
-                            <p className="mt-1 flex">
-                                <Calendar />{" "}
-                                <span className="ml-2">
-                                    {data.mdx.frontmatter.date}
-                                </span>
-                            </p>
+                            {/*<p className="mt-1 flex">*/}
+                            {/*    <Calendar />{" "}*/}
+                            {/*    <span className="ml-2">*/}
+                            {/*        {data.mdx.frontmatter.date}*/}
+                            {/*    </span>*/}
+                            {/*</p>*/}
                             <p className="mt-3">
                                 {data.mdx.frontmatter.description}
                             </p>
@@ -64,7 +66,6 @@ export const query = graphql`
             body
             frontmatter {
                 title
-                date(formatString: "DD MMMM YYYY")
                 description
                 banner {
                     publicURL
