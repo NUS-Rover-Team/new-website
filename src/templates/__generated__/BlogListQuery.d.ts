@@ -31,7 +31,6 @@ export interface BlogListQuery_allMdx_edges_node_frontmatter_image {
 export interface BlogListQuery_allMdx_edges_node_frontmatter {
   title: string;
   description: string | null;
-  date: any | null;
   image: BlogListQuery_allMdx_edges_node_frontmatter_image | null;
 }
 

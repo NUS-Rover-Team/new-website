@@ -42,7 +42,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
             <div className="px-4 lg:px-0" id="portfolio">
                 {portfolioList}
             </div>
-            <Blog>{blogList}</Blog>
+            <Blog><div id = "blog"/>{blogList}</Blog>
             <Contact data={siteData.contact} />
         </Layout>
     )
@@ -97,7 +97,7 @@ const Wall = ({ data }) => {
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
             <ScrollIntoView selector="#portfolio">
                 <Button
-                    title="SEE WORKS"
+                    title="SEE NEWS"
                     type="button"
                     iconRight={<ArrowRight />}
                 />
@@ -159,7 +159,7 @@ const Blog = ({ children }) => {
         <div className="container mx-auto px-0">
             <div className="pt-20 pb-10 text-center lg:pt-40 lg:pb-20">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
-                    Blog
+                    Sub-Teams
                 </h2>
             </div>
             <div className="flex flex-wrap">{children}</div>

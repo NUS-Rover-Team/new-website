@@ -30,7 +30,6 @@ export interface BlogQuery_mdx_frontmatter_banner {
 
 export interface BlogQuery_mdx_frontmatter {
   title: string;
-  date: any | null;
   description: string | null;
   banner: BlogQuery_mdx_frontmatter_banner | null;
 }
